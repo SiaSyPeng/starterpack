@@ -1,15 +1,8 @@
-// change require to es6 import style
-import $ from 'jquery';
-import './style.scss';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-// const $ = require('jquery');
+const App = () => {
+  return <div className="test">All the React are belong to us!</div>;
+};
 
-console.log('starting up!');
-
-// $('#main').html("You've been on this page for ${num} seconds.");
-let num = 0;
-
-setInterval(() => {
-  $('#main').html(`You've been on this page for ${num} seconds.`);
-  num += 1;
-}, 1000);
+ReactDOM.render(<App />, document.getElementById('main'));
